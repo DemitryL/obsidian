@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "8c64ecdd752966ba",
+    "type": "split",
+    "children": [
+      {
+        "id": "261caba9480d8f74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99217c1b672f8618",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Fetch().md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9c0daaaf10c634a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "bee62de30ada3f9c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91902da42515145f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "52d8bb50605c0e93",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "230f37f939ea72b0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "3d3d7a7e40b17692",
+    "type": "split",
+    "children": [
+      {
+        "id": "bcce35524d12c987",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8435c68a0d5d1e92",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Fetch().md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "be94004614f816be",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Fetch().md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f369987a97ee17dc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "bbc5c0064d26c13b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Fetch().md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "99217c1b672f8618",
+  "lastOpenFiles": [
+    "Fetch().md",
+    "JS BASE.md",
+    "JS CURS.md",
+    "Yarn.md",
+    "Linux/Manjaro Linux Desktop.md",
+    "LINUX.md",
+    "TYPESCRIPT.md",
+    "Специальный тип any.md",
+    "TYPESCRIPT/Tипизация аргументов функций.md",
+    "TYPESCRIPT/Typescript. Базовые знания.md",
+    "REACT.md",
+    "IT.md",
+    "Frontend.md",
+    "TYPESCRIPT/install typescript and run files.md",
+    "JAVASCRIPT.md",
+    "TYPESCRIPT",
+    "Linux/Neovim.md",
+    "JS - Method strings.md",
+    "CSS cards.md",
+    "JsCurs/Method string.md",
+    "Frontend/Gulp.md",
+    "Frontend/Gulp4 2023.md",
+    "DOKER.md",
+    "JsCurs/Method reduce(Метод reduce).md",
+    "JsCurs/Filtration(фильтрация).md",
+    "JsBase/Как преобразовать строку в массив js.md",
+    "JsBase/Шпаргалка по js.md",
+    "files/sl.png",
+    "JsCurs",
+    "JsBase",
+    "peoples",
+    "works"
+  ]
+}
