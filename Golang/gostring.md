@@ -4,7 +4,10 @@
 ```
 package main 
 
-import "fmt"
+import (
+  "fmt"
+  "unicode/utf8"
+)
 
 func main() {
   name := "Hello world"
@@ -50,6 +53,109 @@ func main() {
   myDecimalStr := string(myDecimalByteSlice)
   fmt.Println(myDecimalStr) // defg
   
+  // 6. Создание строки из слайса рун
+  // Руны как hex
+  runeHexSlice := []rune{0x45, 0x46, 0x47, 0x48}
+  myStrFromRune := string(runeHexSlice)
+  fmt.Println("From Runes(hex):", myStrFromRune) // EFGH
+  // Руны как литералы
+  runeLiteralSlice := []rune{'v', 'a', 's', 'y', 'a'} // '' - таким образом обозначается руна
+  myStrFromRuneLiterals := string(runeLiteralSlice)
+  fmt.Println("From Runes(literals):", myStrFromRuneLiterals) // Vasya
+  
+  fmt.Printf("%s and %T\n", myStrFromRuneLiterals, myStrFromRuneLiterals) // Vasya and string
+  
+  // 7. Длина и емкость строки
+  // Длина len() - количество байт в слайсе
+  fmt.Println("Length of Вася:", len("Вася")) // Length of Вася: 8
+  
+  // Длина RuneCounter - количество !рун!
+  fmt.Println("Length of Вася:", utf8.RuneCountInString("Вася")) // Length of Вася: 4
+  
+  // Вычисление емкости строки - бессмысленно, т.к. строка базовый тип
+  fmt.Println(cap([]rune("Вася"))) // 4
+  
+  // 8. Сравнение строк  == и !=. Начиная с go 1.6
+  word1, word2 := "Вася", "Петя"
+  if word1 == word2 {
+    fmt.Println("Equal")
+  } else {
+    fmt.Println("Not equal")
+  }
+  
+  // 9. Конкатенация
+  word3 := word1 + word2
+  fmt.Println(word3) // ВасяПетя
+  
+  // 10. Строитель строк (java -> StringBuiler)
+  firstName := "Alex"
+  secondName := "Johnson"
+  fullName := fmt.Sprintf("%s #### %s", firstName, secondName)
+  fmt.Println("FullName:", fullName) // FullName: Alex #### Johnson
+  
+  // 11. Строки не изменяемые
+  fullName[0] = "Q" // (strings are immutable)
+  
+  // 12. А слайсы изменяемые :)
+  fullNameSlice := []rune(fullName)
+  fullNameSlice[0] = 'F'
+  fullName = string(fullNameSlice)
+  fmt.Println("String mutation:", fullName) // String mutation: Flex #### Johnson
+  
+  // 13. Сравнение рун
+  if 'Q' == 'q' {
+    fmt.Println("Runes equal")
+  } else {
+    fmt.Println("Runes not equal")
+  }
+  
+  // 14. Где живут полезные методы работы со строками?
+  // import "strings"
+  
+}
+```
+
+## Работа с буфером
+```
+package main
+
+import (
+  "bufio"
+  "fmt"
+  "os"
+  "strconv"
+)
+
+func main() {
+  var name string
+  input := bufio.NewScanner(os.Stdin)
+  if input.Scan() { // Команда захвата потока ввода и сохранения в буфер (захват идет до символа окончания строки)
+  name = input.Text() // Команда вовращения элементов, помещенных в буфер (отдаст string)
+  }
+  fmt.Println(name)
+  
+  fmt.Println("For loop started:")
+  for {
+    if input.Scan() {
+      result := input.Text()
+      if result == "" {
+       break
+      }
+      fmt.Println("Input string is:", result)
+    }
+  }
+  
+  // Преобразование строкого литерала к чему-нибудь числовому
+  numStr := "10"
+  numInt, _ := strconv.Atoi(numStr) // Atoi - Anything to Int (именно int)
+  fmt.Printf("%d is %T\n", numInt, numInt) // 10 is int
+  
+  numInt64, _ := strconv.ParseInt(numStr, 10, 64)
+  fmt.Printlln(numInt64 + numInt) // (mismatched type int64 and int)
+  
+  numFloat32, _ := strconv.ParseFloat(numStr, 32) //Но это 64-разрядное число будет без проблем ГАРАНТИРОВАНО ПРИВОДИТЬСЯ к 32
+  fmt.Println(numInt64, numFloat32) // 10 10
+  fmt.Printf("%.3f and %T\n, numFloat32, float32(numFloat32)) // 10.000 and float64
   
 }
 ```
