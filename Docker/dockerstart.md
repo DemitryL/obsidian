@@ -45,3 +45,15 @@ docker run -d "путь к приложению"
 docker attach (id || names)
 
 ```
+
+
+```bash
+// Запуск контейнера с оболочкой shell
+docker run -it "name" sh
+/# hostname  // id container
+/# cat /etc/*rel*  // Релизная информация контейнера
+/# exit 
+
+// Удаление сразу всех образов и контейнеров
+docker rm $(docker ps -aq)
+```
