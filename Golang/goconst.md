@@ -1,6 +1,6 @@
 # Const in GO
 
-```
+```go
 package main
 
 import "fmt"

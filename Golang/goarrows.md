@@ -1,6 +1,6 @@
 # Указатели в GO
 
-```
+```go
 package main
 
 import (
@@ -85,7 +85,7 @@ func changeParam(val *int) {
 
 ## Указатели на массивы
 
-```
+```go
 package main
 
 import (

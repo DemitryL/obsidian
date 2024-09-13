@@ -1,8 +1,7 @@
 # if > else if > else
 
-
-```
-package main 
+```go
+package main
 
 import (
   "fmt"
@@ -11,64 +10,64 @@ import (
 
 func main() {
   //Классический условный оператор
-  /* 
+  /*
   if condition {
    //body
   }
   */
-  
+
   var value int
   fmt.Scan(&value)
-  
+
   if value%2 == 0 {
-   fmt.Println("The number", value, "is even") // Число четное 
+   fmt.Println("The number", value, "is even") // Число четное
   }
-  
+
   //Условный оператор с блоком else
   /*
   if condition {
   } esle {
   }
   */
-  
+
   if value%2 == 0 {
-   fmt.Println("The number", value, "is even") // Число четное 
+   fmt.Println("The number", value, "is even") // Число четное
   } else {
-   fmt.Println("The number", value, "is odd") // Число не четное 
+   fmt.Println("The number", value, "is odd") // Число не четное
   }
-  
+
   /*
   if condition1 {
-  
+
   } else if condition2 {
-  
+
   } else if ... {
-  
+
   } else {
-  
+
   }
   */
-  
+
   var color string
   fmt.Scan(&color)
-  
+
   if strings.Compare(color, "green") == 0 {
-    fmt.Println("Color is green")  
+    fmt.Println("Color is green")
   } else if strings.Compare(color, "red") == 0 {
     fmt.Println("Color is red")
   } else {
     fmt.Println("Unknown color")
   }
-  
+
   //Good Инициализация в блоке условного опереатора
   // Блок присваивания - только :=
   // Инициализируемая переменная видна ТОЛЬКО внутри области видимости условного оператора (в телах if, else if, else). Но не за его пределами.
   if num := 10; num%2 == 0 {
     fmt.Println("EVEN")
   } else {
-    fmt.Println("ODD") 
+    fmt.Println("ODD")
   }
-  
+
   // Ущербно
   /*
   var age int = 10
@@ -79,16 +78,16 @@ func main() {
     fmt.Println("Another case")
   }
   */
-  
+
   // НЕ ИДЕОМАТИЧНО
   if width := 100; width > 100 {
     fmt.Println("Width > 100")
   } else {
     fmt.Println("Width <= 100")
   }
-  
+
   // Странное правило номер1: В Go стараются избегать блоков ELSE
-  
+
   // ИДЕОМАТИЧНО
   if height := 100; height > 100 {
     fmt.Println("height > 100")
@@ -97,4 +96,3 @@ func main() {
   fmt.Println("height <= 100")
 }
 ```
-
