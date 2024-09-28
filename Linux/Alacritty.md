@@ -15,31 +15,26 @@ sudo apt install alacritty
 
 ### 3. Start Compiling process
 ```bash
-cd .config/alacritty/alacritty.yml
+cd .config/alacritty/alacritty.toml
 ```
 
-```alacritty.yml
-font:
-	size: 14
-window:
-	padding:
-		x: 0
-		y: 0
-	opacity: 0.92
-	decorations: full
-	dynamic_padding: true
-	
-cursor:
-	unfocused_hollow: true
-	style:
-		blinking: Never
-		
-env:
-	TERM: xterm-256color
-	
-scrolling:
-	history: 2000
-	auto_scroll: true
+```alacritty.toml
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+blinking = "Never"
+
+[font]
+size = 15
+
+[window]
+decorations = "full"
+opacity = 0.80
+
+[window.padding]
+x = 5
+y = 5
 
 #######################################
 ## START OF COLOR SCHEMES ##

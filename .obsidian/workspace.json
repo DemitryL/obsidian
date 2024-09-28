@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Fetch().md",
+                "file": "Linux/Ubuntu start.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3d3d7a7e40b17692",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Fetch().md",
+                "file": "Linux/Ubuntu start.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Fetch().md",
+                "file": "Linux/Ubuntu start.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Fetch().md"
+                "file": "Linux/Ubuntu start.md"
               }
             }
           }
@@ -149,6 +148,8 @@
   },
   "active": "99217c1b672f8618",
   "lastOpenFiles": [
+    "Linux/Neovim.md",
+    "Linux/Ubuntu start.md",
     "Fetch().md",
     "JS BASE.md",
     "JS CURS.md",
@@ -165,7 +166,6 @@
     "TYPESCRIPT/install typescript and run files.md",
     "JAVASCRIPT.md",
     "TYPESCRIPT",
-    "Linux/Neovim.md",
     "JS - Method strings.md",
     "CSS cards.md",
     "JsCurs/Method string.md",
@@ -175,7 +175,6 @@
     "JsCurs/Method reduce(Метод reduce).md",
     "JsCurs/Filtration(фильтрация).md",
     "JsBase/Как преобразовать строку в массив js.md",
-    "JsBase/Шпаргалка по js.md",
     "files/sl.png",
     "JsCurs",
     "JsBase",

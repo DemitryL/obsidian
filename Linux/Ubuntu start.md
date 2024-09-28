@@ -8,13 +8,14 @@ sudo apt-get upgrade
 ```
 
 Решаем проблему с отображением кириллицы в текстовом редакторе Gedit
+Выполни в консоли **locale -a** и проверь, есть ли в выводе `ru_RU.utf8`, но это отвечает больше за вывод в консоли, терминале и в приложениях в принципе.
 ```bash
 gsettings set org.gnome.gedit.preferences.encodings candidate-encodings "['UTF-8', 'WINDOWS-1251', 'KOI8-R', 'CURRENT', 'ISO-8859-15', 'UTF-16']"
 ```
 
 Устанавливаем дополнительную поддержку архиваторов
 ```bash
-sudo apt install p7zip-rar rar unrar unace arj cabextract -y
+sudo apt install p7zip-rar rar unrar unace unzip arj cabextract -y
 ```
 
 Устанавливаем программы для работы с пакетами:
@@ -53,8 +54,8 @@ Then install Node.js:
 sudo apt install -y curl
 sudo snap install node --channel=20/stable --classic
 ```
-
-```
+if package npm not found to:
+```bash
 sudo apt install npm
 ```
 
@@ -96,4 +97,39 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 rm -rf google-chrome-stable_current_amd64.deb 
 ```
 
+#### Install Obsidian Vault 
+```bash
+sudo snap install obsidian --classic
+```
 
+#### Install Neovim
+```bash
+sudo apt install neovim
+```
+#### Install Fonts
+Перейдите в свой домашний каталог создать новую папку и назвать ее .fonts. 
+
+Скопируйте файлы шрифтов и вставьте их в каталог .fonts, который вы создали на предыдущем шаге. Больше ничего делать не нужно. Теперь эти шрифты будут доступны для вас.
+
+#### Install Go
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install golang-go
+```
+Struct folds:  HOME/go  -> go/src/github.com/DemitryL/  -> go/pkg -> go/bin
+
+#### Install VsCode
+```bash
+sudo snap install --classic code
+```
+
+#### Install Mpv vedeo player
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt install mpv
+```
+
+#### Install Telegram
+```bash
+sudo snap install telegram-desktop
+```
