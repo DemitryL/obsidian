@@ -91,8 +91,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 #### Install Google chrome browser
 ```bash
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd65.deb
-
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 rm -rf google-chrome-stable_current_amd64.deb 
