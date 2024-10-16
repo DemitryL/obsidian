@@ -144,4 +144,8 @@ For uninstall
 ```bash
 sudo snap remove postman
 ```
-
+#### Install Make
+```bash
+sudo apt apdate 
+sudo apt install make
+```
